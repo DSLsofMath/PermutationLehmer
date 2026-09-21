@@ -1,0 +1,30 @@
+name: Agda CI
+on: [push, pull_request]
+jobs:
+  check:
+    name: Check Permutation.lagda
+    runs-on: ubuntu-latest
+    env:
+      AGDA_VERSION: '2.8.0'
+      STDLIB_VERSION: 'v2.3'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Agda ${{ env.AGDA_VERSION }} (prebuilt binary)
+        run: |
+          curl -sL -o agda.tar.xz \
+            "https://github.com/agda/agda/releases/download/v${AGDA_VERSION}/Agda-v${AGDA_VERSION}-linux.tar.xz"
+          mkdir -p "$HOME/.local/bin"
+          tar -xJf agda.tar.xz -C "$HOME/.local/bin"
+          chmod +x "$HOME/.local/bin/agda"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch agda-stdlib ${{ env.STDLIB_VERSION }}
+        run: |
+          git clone --depth 1 --branch "$STDLIB_VERSION" \
+            https://github.com/agda/agda-stdlib.git "$HOME/agda-stdlib"
+          mkdir -p "$HOME/.agda"
+          echo "$HOME/agda-stdlib/standard-library.agda-lib" > "$HOME/.agda/libraries"
+
+      - run: agda --version
+      - run: agda Permutation.lagda
