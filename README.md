@@ -1,6 +1,7 @@
 # Finite permutations in Agda — associated code
 
 [![Agda CI](https://github.com/DSLsofMath/PermutationLehmer/actions/workflows/agda-ci.yaml/badge.svg)](https://github.com/DSLsofMath/PermutationLehmer/actions/workflows/agda-ci.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22921833.svg)](https://doi.org/10.5281/zenodo.22921833)
 
 This is the Agda code accompanying the functional pearl
 
@@ -55,6 +56,8 @@ This is also checked automatically on every push, see `.github/workflows/agda-ci
 
 ## Citation
 
+### The paper
+
 The paper is submitted to the Journal of Functional Programming (2026-09); the citation below will be updated when/if there is a reviewed/published version. In the meantime, cite the HAL pre-print:
 
 ```bibtex
@@ -64,6 +67,22 @@ The paper is submitted to the Journal of Functional Programming (2026-09); the c
   year         = {2026},
   note         = {In submission to the Journal of Functional Programming (JFP)},
   howpublished = {Pre-print: \url{https://hal.science/hal-05746158}},
+}
+```
+
+### This code
+
+Archived on Zenodo. Cite the specific version DOI below for a reproducible reference (it always points at these exact files). The badge above uses the "concept DOI" that always resolves to the latest release (which could be newer).
+
+```bibtex
+@software{JanssonSwierstra2026PermutationLehmer,
+  author    = {Patrik Jansson and Wouter Swierstra},
+  title     = {{PermutationLehmer}: {Agda} code for the finite permutations pearl},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v1.0.0},
+  doi       = {10.5281/zenodo.22921834},
+  note      = {Code for the paper ``niFite semPurtatoni'' (Finite permutations in Agda), Patrik Jansson and Wouter Swierstra, \url{https://hal.science/hal-05746158}},
 }
 ```
 
