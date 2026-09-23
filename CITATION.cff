@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "PermutationLehmer: Agda code for the finite permutations pearl"
+type: software
+authors:
+  - family-names: Jansson
+    given-names: Patrik
+    orcid: "https://orcid.org/0000-0003-3078-1437"
+    affiliation: "Chalmers University of Technology and University of Gothenburg"
+  - family-names: Swierstra
+    given-names: Wouter
+    orcid: "https://orcid.org/0000-0002-0295-7944"
+    affiliation: "Utrecht University"
+license: MIT
+repository-code: "https://github.com/DSLsofMath/PermutationLehmer"
+preferred-citation:
+  type: unpublished
+  title: "niFite semPurtatoni (Finite permutations in Agda)"
+  authors:
+    - family-names: Jansson
+      given-names: Patrik
+      orcid: "https://orcid.org/0000-0003-3078-1437"
+    - family-names: Swierstra
+      given-names: Wouter
+      orcid: "https://orcid.org/0000-0002-0295-7944"
+  url: "https://hal.science/hal-05746158"
+  notes: "Submitted to the Journal of Functional Programming; not yet peer-reviewed."

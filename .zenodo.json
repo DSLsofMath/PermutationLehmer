@@ -1,0 +1,33 @@
+{
+  "title": "PermutationLehmer: Agda code for the finite permutations pearl",
+  "description": "Agda code accompanying the functional pearl \"niFite semPurtatoni\" (Finite permutations in Agda), submitted to the Journal of Functional Programming. A first-order (Lehmer-code) representation of finite permutations with identity, composition, inversion, and a decision procedure, all proved correct.",
+  "creators": [
+    {
+      "name": "Jansson, Patrik",
+      "affiliation": "Chalmers University of Technology and University of Gothenburg",
+      "orcid": "0000-0003-3078-1437"
+    },
+    {
+      "name": "Swierstra, Wouter",
+      "affiliation": "Utrecht University",
+      "orcid": "0000-0002-0295-7944"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Agda",
+    "dependent types",
+    "formal verification",
+    "permutations",
+    "Lehmer code",
+    "functional programming"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://hal.science/hal-05746158",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    }
+  ],
+  "upload_type": "software"
+}
